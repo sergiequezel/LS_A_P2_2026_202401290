@@ -99,6 +99,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
     guardarArchivo(L"tokens.html", htmlTokens);
     guardarArchivo(L"errores.html", htmlErrores);
     guardarArchivo(L"arbol.dot", dot);
+    system("dot -Tpng arbol.dot -o arbol.png");
 
     // 7. Abrir resultados
     abrirHTML(L"reporte1.html");
